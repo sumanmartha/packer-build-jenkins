@@ -14,7 +14,7 @@ ansiColor('xterm') {
         stage('Build') {
             //withCredentials([usernamePassword(credentialsId: 'aws_access_keys', usernameVariable: 'AWS_ACCESS_KEY', passwordVariable: 'AWS_SECRET_KEY')]) {
             // Run the packer build
-              sh "packer build -var "vpc_name=pid-dev-vpc" -var "subnet_tag_name=PublicSubnetAZ2" jenkins.json"
+              sh "packer build -var 'vpc_name=pid-dev-vpc' -var 'subnet_tag_name=PublicSubnetAZ2' jenkins.json"
             //}
         }
         stage('Store Artifacts') {
