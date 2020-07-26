@@ -8,7 +8,7 @@ ansiColor('xterm') {
             sh "ansible-galaxy install -r requirements.yml"
         }
         stage('Validate') {
-            sh "packer validate jenkins.json"
+            //sh "packer validate jenkins.json"
             sh "ansible-playbook jenkins.yml --syntax-check"
         }
         stage('Build') {
