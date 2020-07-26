@@ -1,7 +1,7 @@
 {
   "variables": {
-    "vpc_name": null,
-    "subnet_tag_name": null
+    "vpc_name": "pid-dev-vpc",
+    "subnet_tag_name": "PublicSubnetAZ2"
   },
   "builders": [{
       "type":"amazon-ebs",
